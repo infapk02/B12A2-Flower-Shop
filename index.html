@@ -8,9 +8,71 @@
 
     <!-- tailwind css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header></header>
+    <header class="w-full h-screen">
+      <!-- navbar -->
+      <nav
+        class="max-w-7xl mx-auto h-20 flex items-center justify-between px-2"
+      >
+        <!-- logo -->
+        <img src="./assets/logo.png" alt="logo" class="w-24" />
+
+        <!-- lists -->
+        <ul class="h-full flex items-center gap-8">
+          <li class="hidden sm:block">
+            <a href="#" class="text-lg">Home</a>
+          </li>
+
+          <li class="hidden sm:block">
+            <a href="#" class="text-lg">Shop</a>
+          </li>
+
+          <li class="hidden sm:block">
+            <a href="#" class="text-lg">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="text-lg"
+              ><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- banner -->
+      <section id="banner" class="w-full h-[calc(100vh-80px)]">
+        <div
+          class="max-w-7xl mx-auto h-full px-2 flex-col-reverse md:flex-row flex md:items-center md:justify-between"
+        >
+          <!-- text -->
+          <div class="text w-full md:w-1/2">
+            <h1
+              class="text-4xl md:text-6xl font-mono font-bold leading-none mb-4"
+            >
+              ALWAYS <span class="text-orange-500">FRESH FLOWERS</span>
+            </h1>
+            <p class="font-mono text-gray-500">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh flowers that are perfect for any occasion.
+            </p>
+          </div>
+          <!-- image -->
+          <div class="image w-full md:w-1/2">
+            <img src="./assets/hero-flower.png" alt="flower" class="w-full" />
+          </div>
+        </div>
+      </section>
+    </header>
     <main></main>
     <footer></footer>
   </body>
