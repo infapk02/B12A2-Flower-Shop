@@ -368,13 +368,13 @@
       <!-- subscribe -->
       <section
         id="subscribe"
-        class="w-full h-[535px] bg-[url('./assets/news-letter-bg.png')] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center"
+        class="w-full h-[535px] bg-[url('./assets/news-letter-bg.png')] bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center px-2"
       >
-        <h2 class="font-mono font-bold text-white text-5xl">
+        <h2 class="font-mono font-bold text-white text-2xl md:text-5xl">
           Join the colorful Bunch
         </h2>
 
-        <form action="" class="mt-10 flex w-7/12">
+        <form action="" class="mt-10 flex w-full md:w-7/12">
           <input
             type="email"
             placeholder="Write Email"
@@ -388,6 +388,53 @@
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer class="w-full h-fit py-10 bg-white">
+      <div
+        class="max-w-7xl mx-auto px-2 grid-cols-1 md:grid-cols-2 grid lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      >
+        <!-- logo -->
+        <div class="w-full">
+          <img src="./assets/logo.png" alt="logo" />
+          <p class="text-xl mt-4 font-mono text-gray-500">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
+        </div>
+
+        <!-- links -->
+        <ul class="w-full space-y-4">
+          <li><a href="#" class="text-gray-500 font-semibold">Home</a></li>
+          <li><a href="#" class="text-gray-500 font-semibold">About Us</a></li>
+          <li><a href="#" class="text-gray-500 font-semibold">Blog</a></li>
+          <li><a href="#" class="text-gray-500 font-semibold">FAQ</a></li>
+          <li>
+            <a href="#" class="text-gray-500 font-semibold">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- more links -->
+        <ul class="w-full space-y-4">
+          <li><a href="#" class="text-gray-500 font-semibold">Features</a></li>
+          <li><a href="#" class="text-gray-500 font-semibold">Pricing</a></li>
+          <li>
+            <a href="#" class="text-gray-500 font-semibold">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-500 font-semibold">Terms of Service</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-500 font-semibold">Help Center</a>
+          </li>
+        </ul>
+
+        <!-- socials -->
+        <div class="flex w-full items-start">
+          <i class="fa-brands text-4xl fa-facebook"></i>
+          <i class="fa-brands text-4xl fa-linkedin"></i>
+          <i class="fa-brands text-4xl fa-twitter"></i>
+          <i class="fa-brands text-4xl fa-youtube"></i>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
